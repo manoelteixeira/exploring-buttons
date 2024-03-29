@@ -1,10 +1,17 @@
-@import "./_setup.scss";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-// Buttons
-@import "./buttons.scss";
-
-// Calculator
-@import "./calculator.scss";
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .container {
   display: grid;

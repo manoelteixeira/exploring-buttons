@@ -1,6 +1,26 @@
 @font-face {
   font-family: "digital";
+  // src: url("../assets/digital-7.ttf");
   src: url("../assets/digital-7.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  //   display: grid;
+  //   grid-template-columns: 1fr;
+  //   place-content: center;
+  //   justify-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .app {

@@ -1,3 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .buttons-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -156,11 +171,97 @@
   width: 100%;
 }
 .animated-buttons__three {
+  padding: 10px 20px;
+  border: none;
+  background: linear-gradient(140deg, rgb(255, 133, 27), rgb(253, 15, 190));
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.animated-buttons__three:hover {
+  background: linear-gradient(140deg, rgb(253, 15, 190), rgb(255, 133, 27));
+}
+.animated-buttons__three:hover::before {
+  background: transparent;
+}
+.animated-buttons__three::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 94%;
+  height: 88%;
+  background: rgb(16, 24, 38);
+  border-radius: 10px;
+  top: 6%;
+  left: 3%;
+  transition: all 0.3s ease;
+}
+.animated-buttons__four {
+  padding: 10px 20px;
+  border: none;
+  background: white;
+  color: rgb(148, 51, 233);
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: inset -0.5px -0.5px 2px 0.5px lightgray;
+}
+.animated-buttons__four:hover {
+  color: white;
+  background: transparent;
+}
+.animated-buttons__four:hover::before {
+  top: 0;
+  left: 0;
+}
+.animated-buttons__four::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: rgb(148, 51, 233);
+  top: 10%;
+  left: 5%;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.animated-buttons__five {
+  padding: 10px 30px;
+  border: 8px black solid;
+  background: transparent;
+  color: black;
+  font-size: 20px;
+  font-weight: bolder;
+  position: relative;
+}
+.animated-buttons__five:hover::before {
+  top: 0;
+  left: 0;
+}
+.animated-buttons__five::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 105%;
+  height: 110%;
+  background: rgb(252, 166, 165);
+  top: -20px;
+  left: -20px;
+  transition: all 0.3s ease;
+}
+.animated-buttons__six {
   position: relative;
   display: inline-block;
   margin: 20px;
 }
-.animated-buttons__three:after {
+.animated-buttons__six:after {
   content: "";
   height: 100%;
   width: 100%;
@@ -172,7 +273,7 @@
   background-color: #2b1800;
   border-radius: 5px;
 }
-.animated-buttons__three span {
+.animated-buttons__six span {
   color: white;
   font-family: Helvetica, sans-serif;
   font-weight: bold;
@@ -189,23 +290,8 @@
   box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #915100;
   border-radius: 5px;
 }
-.animated-buttons__three span:active {
+.animated-buttons__six span:active {
   top: 10px;
   background-color: #f78900;
   box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #915100;
-}
-.animated-buttons__four {
-  padding: 10px 30px;
-  border-radius: 10px;
-  font-size: 18px;
-  font-weight: 700;
-  transition: all 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  cursor: pointer;
-}
-.animated-buttons__four:active {
-  background-color: orange;
-  color: white;
-}/*# sourceMappingURL=buttons.css.map */
+}/*# sourceMappingURL=styles.css.map */

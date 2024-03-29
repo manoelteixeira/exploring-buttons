@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "digital";
+  src: url("../assets/digital-7.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  width: 350px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  padding: 30px 20px;
+  border-radius: 20px;
+}
+.app__display {
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: #75c900;
+  font-family: "digital";
+  font-size: 42px;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: end;
+}
+.app__keypad {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.app__keypad-key {
+  font-size: 28px;
+  font-weight: 700;
+  padding: 10px;
+  text-align: center;
+  border-top: 2px solid gray;
+  border-left: 2px solid gray;
+  border-bottom: 5px solid lightgray;
+  border-right: 5px solid lightgray;
+  border-radius: 5px;
+  background-color: darkgray;
+  color: white;
+  transition: all 0.2s;
+}
+.app__keypad-key:active {
+  background-color: lightgray;
+  border: 2px solid gray;
+}
+.app__keypad-key:last-child {
+  width: auto;
+  grid-column: span 2;
+}/*# sourceMappingURL=index.css.map */
